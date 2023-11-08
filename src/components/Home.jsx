@@ -7,7 +7,8 @@ const Home = () => {
       <Hero />
       <Container>
         <div className="title-text py-5">
-          <h1>Our Main Events</h1>
+          <h1><span className="spn-color">Discover the best experiences in</span> <span className="tr">Tirana City</span></h1>
+          <span className="spn-color">Concerts, nightlife, culture, pop-ups, and much more</span>
         </div>
         <HomeCards />
       </Container>

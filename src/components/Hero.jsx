@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ExampleCarouselImage from './ExampleCarouselImage';
 import Carousel from "react-bootstrap/Carousel";
 
 // Assuming you have two sets of images for desktop and mobile

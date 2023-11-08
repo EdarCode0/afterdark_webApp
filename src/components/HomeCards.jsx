@@ -1,57 +1,102 @@
-import Image1 from '../assets/images/club1.jpg';
+import Image1 from "../assets/images/club1.png";
+import Image2 from "../assets/images/club2.jpeg";
+import Image3 from "../assets/images/club3.jpeg";
+import Image4 from "../assets/images/club4.jpeg";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "./Button";
 
 const HomeCards = () => {
   return (
-    <div className="row">
-    <div className="col-lg-4 col-sm-6 mb-4">
-      <div className="portfolio-item">
-        <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
-              <i className="fas fa-plus fa-3x"></i>
-            </div>
+    <Container>
+      {/* Columns are always 50% wide, on mobile and desktop */}
+      <Row>
+        <Col xs={6} lg={6} sm={6} className="mb-4">
+          <div className="portfolio-item">
+            <a
+              className="portfolio-link"
+              data-bs-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <i className="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                className="img-fluid rounded"
+                src={Image1}
+                alt="Venue Club"
+              />
+            </a>
           </div>
-          <img className="img-fluid" src={Image1} alt="Venue Club" />
-        </a>
-        <div className="portfolio-caption bg-dark">
-          <div className="portfolio-caption-heading text-white">Venue Club</div>
-        </div>
-      </div>
-    </div>
-
-    <div className="col-lg-4 col-sm-6 mb-4">
-      <div className="portfolio-item">
-        <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
-              <i className="fas fa-plus fa-3x"></i>
-            </div>
+        </Col>
+        <Col xs={6} lg={6} sm={6} className="mb-4">
+          <div className="portfolio-item">
+            <a
+              className="portfolio-link"
+              data-bs-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <i className="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                className="img-fluid rounded"
+                src={Image2}
+                alt="Venue Club"
+              />
+            </a>
           </div>
-          <img className="img-fluid" src={Image1} alt="Venue Club" />
-        </a>
-        <div className="portfolio-caption bg-dark">
-          <div className="portfolio-caption-heading text-white">Venue Club</div>
-        </div>
-      </div>
-    </div>
-
-        <div className="col-lg-4 col-sm-6 mb-4">
-      <div className="portfolio-item">
-        <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
-              <i className="fas fa-plus fa-3x"></i>
-            </div>
+        </Col>
+        <Col xs={6} lg={6} sm={6} className="mb-4">
+          <div className="portfolio-item">
+            <a
+              className="portfolio-link"
+              data-bs-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <i className="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                className="img-fluid rounded"
+                src={Image3}
+                alt="Venue Club"
+              />
+            </a>
           </div>
-          <img className="img-fluid" src={Image1} alt="Venue Club" />
-        </a>
-        <div className="portfolio-caption bg-dark">
-          <div className="portfolio-caption-heading text-white">Venue Club</div>
-        </div>
+        </Col>
+        <Col xs={6} lg={6} sm={6} className="mb-4">
+          <div className="portfolio-item">
+            <a
+              className="portfolio-link"
+              data-bs-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <i className="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                className="img-fluid rounded"
+                src={Image4}
+                alt="Venue Club"
+              />
+            </a>
+          </div>
+        </Col>
+      </Row>
+      <div className="btn-more">
+        <Button />
       </div>
-    </div>
-
-  </div>
+    </Container>
   );
 };
 
