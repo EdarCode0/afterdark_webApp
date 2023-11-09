@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start text-muted bg-dark">
+    <footer className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block text-white">
           <span>Get connected with us on social networks:</span>

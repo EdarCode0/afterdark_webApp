@@ -15,7 +15,7 @@ const navLinks = [
 
 function AppNavbar() {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <Navbar className="nav" expand="lg" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img

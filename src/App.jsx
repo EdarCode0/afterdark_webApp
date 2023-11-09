@@ -1,5 +1,5 @@
 import "./App.css";
-import { AppNavbar, Home, About, Events, Contact, Footer } from './components/MyCpomponents';
+import { AppNavbar, Home, About, Events, Contact, Footer, SignIn } from './components/MyCpomponents';
 import { Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
           <Route path="/about" element={ <About /> }/>
           <Route path="/events" element={ <Events /> }/>
           <Route path="/contact" element={ <Contact /> }/>
+          <Route path="/signin" element={ <SignIn /> }/>
         </Routes>
       </div>
       <Footer />

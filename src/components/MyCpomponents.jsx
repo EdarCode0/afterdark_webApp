@@ -7,6 +7,8 @@ import Events from "./Events";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import HomeCards from "./HomeCards";
+import SignUp from "../Authentication/SignUp";
+import SignIn from "../Authentication/SignIn";
 
 export {
   AppNavbar,
@@ -18,4 +20,6 @@ export {
   Contact,
   Footer,
   HomeCards,
+  SignIn,
+  SignUp
 };
