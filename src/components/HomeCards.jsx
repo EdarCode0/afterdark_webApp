@@ -5,9 +5,14 @@ import Image4 from "../assets/images/club4.jpeg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useNavigate } from 'react-router-dom';
 import Button from "./Button";
 
 const HomeCards = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate('/events');
+  };
   return (
     <Container>
       {/* Columns are always 50% wide, on mobile and desktop */}
@@ -94,7 +99,7 @@ const HomeCards = () => {
         </Col>
       </Row>
       <div className="btn-more">
-        <Button />
+      <Button navigate={handleNavigation} />
       </div>
     </Container>
   );

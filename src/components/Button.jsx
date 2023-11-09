@@ -1,7 +1,8 @@
-import React from "react";
+// Button.jsx
+import React from 'react';
 
-const Button = () => {
-  return <button className="button button1">More Events</button>;
+const Button = ({ navigate }) => {
+  return <button className="button button1" onClick={navigate}>More Events</button>;
 };
 
 export default Button;
