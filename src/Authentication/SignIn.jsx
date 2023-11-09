@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import boat from '../assets/video/videoplayback.mp4';
 
 const SignIn = () => {
   return (
     <section id="signin">
+      
       <div className="main text-center">
         <input type="checkbox" id="chk" aria-hidden="true" />
 
