@@ -4,10 +4,9 @@ import Hero from "./Hero";
 import Button from "./Button";
 import About from "./About";
 import Events from "./Events";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import HomeCards from "./HomeCards";
-import SignUp from "../Authentication/SignUp";
+import Radio from "./Radio";
 import SignIn from "../Authentication/SignIn";
 
 export {
@@ -17,9 +16,8 @@ export {
   Button,
   About,
   Events,
-  Contact,
   Footer,
   HomeCards,
+  Radio,
   SignIn,
-  SignUp
 };

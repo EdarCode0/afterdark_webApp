@@ -11,7 +11,7 @@ const navLinks = [
   { to: "/", title: "Home" },
   { to: "/about", title: "About" },
   { to: "/events", title: "Events" },
-  { to: "/contact", title: "Contact Us" },
+  { to: "/radio", title: "Radio" },
 ];
 
 function AppNavbar() {
