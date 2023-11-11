@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import playlist from "../constants/playlist";
-import { BsVolumeMuteFill, BsVolumeUpFill } from "react-icons/bs";
+import video from '../assets/video/bg.mp4';
+import muteIcon from '../assets/images/icons8-play-64.png'
+import unmuteIcon from '../assets/images/icons8-pause-50.png'
+// import { BsVolumeMuteFill, BsVolumeUpFill } from "react-icons/bs";
 
 const Radio = () => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -31,7 +34,10 @@ const Radio = () => {
 
   return (
     <section id="radio">
-      <div>
+      <div className="video-background">
+        <video src={video} autoPlay loop muted />
+      </div>
+      <div className="player-overlay">
         <div className="player">
           {/* ... other components ... */}
 
@@ -49,13 +55,16 @@ const Radio = () => {
           <div className="controls">
             <button className="big_play_pause" onClick={toggleMute}>
               <div className="playpause">
-                {isMuted ? <BsVolumeMuteFill /> : <BsVolumeUpFill />}
+                {isMuted ? (
+                  <img src={muteIcon} alt="Mute" />
+                ) : (
+                  <img style={{width: 50, height: 50}} src={unmuteIcon} alt="Unmute" />
+                )}
               </div>
             </button>
           </div>
         </div>
       </div>
-
       <audio ref={audioRef} src={currentSong.audio} autoPlay muted={isMuted} />
     </section>
   );
