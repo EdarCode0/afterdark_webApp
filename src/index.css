@@ -2,7 +2,7 @@
 
 body {
   font-family: "Proxima Nova" !important;
-  background-color: #000000 !important;
+  background-color: #0F0F0F !important;
 }
 
 .title-text {
@@ -42,10 +42,10 @@ body {
 }
 
 .button {
-  background-color: #7851a9;
+  background-color: #8878c3;
   /* Green */
   border: none;
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -55,10 +55,18 @@ body {
   padding: 10px 24px;
   border-radius: 25px;
   width: 100%;
+  transition: all 0.5s ease-out;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.button:hover {
+  opacity: 0.5;
 }
 
 .spn-color {
-  color: #4b0082;
+  color: #8878c3;
+  font-weight: 800;
 }
 
 .tr {
@@ -172,7 +180,7 @@ input {
 }
 
 .nav {
-  background-color: #000 !important;
+  background-color: #0F0F0F !important;
 }
 
 .input-signup {
@@ -288,8 +296,8 @@ header .overlay {
 
   /* Glowing effect */
   /* box-shadow: */
-    /* inner glow */
-    /* 0 0 50px 3px #483d8b; */
+  /* inner glow */
+  /* 0 0 50px 3px #483d8b; */
   /* outer glow */
   /* position: relative;
   z-index: 1; */
@@ -337,7 +345,7 @@ header .overlay {
   vertical-align: middle;
   align-self: center;
   align-items: center;
-} 
+}
 
 /* .small,
 .big,
@@ -490,6 +498,37 @@ header .overlay {
 }
 
 /* RADIO STYLE */
+
+.portfolio-item {
+  transition: transform 0.5s ease-out; /* Slower, smoother transition */
+  display: inline-block; /* Helps with smooth scaling */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+  z-index: 1; /* Ensure the card is above others when enlarged */
+}
+
+.portfolio-item img {
+  transition: opacity 0.5s ease-out; /* Smoother transition for opacity */
+  opacity: 0.7; /* Set default reduced opacity */
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+}
+
+.card-title h1 {
+  color: white;
+  margin: 0;
+
+}
+
 
 @media (pointer: coarse) and (hover: none) {
   header {
