@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
-import Logo from "../assets/apple-13.svg";
+import Logo from "../assets/images/afterdark-logo.png";
 import { BsLockFill } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 
@@ -21,8 +21,8 @@ function AppNavbar() {
         <Navbar.Brand as={Link} to="/">
           <img
             src={Logo}
-            width="30"
-            height="30"
+            width="50"
+            height="50"
             className="d-inline-block align-top"
             alt="Logo"
           />

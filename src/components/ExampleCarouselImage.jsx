@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// Import your images
 import FirstSlideImage from '../assets/images/party-img-2.png'; // Update with your actual file paths
 import SecondSlideImage from '../assets/images/img_2.png';
 import ThirdSlideImage from '../assets/images/img_1.png';
@@ -19,7 +18,7 @@ const ExampleCarouselImage = ({ text }) => {
       imagePath = ThirdSlideImage;
       break;
     default:
-      imagePath = FirstSlideImage; // Default image if none of the text matches
+      imagePath = FirstSlideImage; 
   }
 
   return (

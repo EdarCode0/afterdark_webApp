@@ -1,4 +1,3 @@
-
 const EventCards = ({ cards }) => {
     return (
 
