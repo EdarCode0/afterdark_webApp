@@ -1,6 +1,22 @@
-import React from 'react'
+import EventCards from "./EventCards";
 
 const Events = () => {
+
+  const eventCards = [
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+    { img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp", alt: 'img1' },
+
+
+  ]
   return (
     <section className='container'>
       <div className='mt-5'>
@@ -12,7 +28,11 @@ const Events = () => {
         <button className="btn text-white"> Cars</button>
         <button className="btn text-white" > People</button>
       </div>
-      <div className="row">
+      <a href="#">
+        <EventCards cards={eventCards} />
+      </a>
+
+      {/* <div className="row">
         <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
@@ -54,7 +74,7 @@ const Events = () => {
             alt="Yosemite National Park"
           />
         </div>
-      </div>
+      </div> */}
     </section>
 
   )

@@ -96,18 +96,6 @@ body {
   animation: pop-up 1s ease-out forwards;
 }
 
-@keyframes pop-up {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 #chk {
   display: none;
 }
@@ -500,18 +488,24 @@ header .overlay {
 /* RADIO STYLE */
 
 .portfolio-item {
-  transition: transform 0.5s ease-out; /* Slower, smoother transition */
-  display: inline-block; /* Helps with smooth scaling */
+  transition: transform 0.5s ease-out;
+  /* Slower, smoother transition */
+  display: inline-block;
+  /* Helps with smooth scaling */
 }
 
 .portfolio-item:hover {
-  transform: scale(1.05); /* Enlarge the card on hover */
-  z-index: 1; /* Ensure the card is above others when enlarged */
+  transform: scale(1.05);
+  /* Enlarge the card on hover */
+  z-index: 1;
+  /* Ensure the card is above others when enlarged */
 }
 
 .portfolio-item img {
-  transition: opacity 0.5s ease-out; /* Smoother transition for opacity */
-  opacity: 0.7; /* Set default reduced opacity */
+  transition: opacity 0.5s ease-out;
+  /* Smoother transition for opacity */
+  opacity: 0.7;
+  /* Set default reduced opacity */
 }
 
 .card-title {
@@ -527,6 +521,77 @@ header .overlay {
   color: white;
   margin: 0;
 
+}
+
+.event-cards {
+  opacity: 0;
+  /* Start with cards invisible */
+  transition: all 0.5s ease-out;
+  display: inline-block;
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  /* Keeps the card visible after the animation */
+}
+
+/* Example for staggering the cards */
+.event-cards:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.event-cards:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.event-cards:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.event-cards:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.event-cards:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.event-cards:nth-child(6) {
+  animation-delay: 2s;
+}
+
+
+/* Continue for as many cards as you have */
+
+
+.event-cards:hover {
+  transform: scale(1.05) !important;
+  /* Enlarge the card on hover */
+  z-index: 1;
+  /* Ensure the card is above others when enlarged */
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
