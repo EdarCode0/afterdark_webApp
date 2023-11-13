@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import boat from '../assets/video/videoplayback.mp4';
 
 const SignIn = () => {
   return (

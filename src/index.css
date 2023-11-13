@@ -42,7 +42,7 @@ body {
 }
 
 .button {
-  background-color: #8878c3;
+  background-color: #DF00FF;
   /* Green */
   border: none;
   color: #fff;
@@ -65,12 +65,12 @@ body {
 }
 
 .spn-color {
-  color: #8878c3;
+  color: #DF00FF;
   font-weight: 800;
 }
 
 .tr {
-  color: gray;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -602,5 +602,11 @@ header .overlay {
 
   header video {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 30px;
   }
 }

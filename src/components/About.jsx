@@ -1,5 +1,4 @@
 import React from 'react';
-import boat from '../assets/video/videoplayback.mp4';
 import techno from '../assets/video/techno-party.mp4';
 
 const About = () => {
