@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
+import LogoIcon from "../assets/logo-black.png"
 import { BsLockFill } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 

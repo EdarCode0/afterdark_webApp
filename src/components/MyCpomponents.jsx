@@ -7,6 +7,7 @@ import Events from "./Events";
 import Footer from "./Footer";
 import HomeCards from "./HomeCards";
 import Radio from "./Radio";
+import EventDetails from "./EventDetails";
 import SignIn from "../Authentication/SignIn";
 
 export {
@@ -19,5 +20,6 @@ export {
   Footer,
   HomeCards,
   Radio,
+  EventDetails,
   SignIn,
 };

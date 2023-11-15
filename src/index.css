@@ -523,52 +523,21 @@ header .overlay {
 
 }
 
-.event-cards {
-  opacity: 0;
-  /* Start with cards invisible */
-  transition: all 0.5s ease-out;
-  display: inline-block;
-  animation-name: fadeInUp;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  /* Keeps the card visible after the animation */
+.event-card-hover {
+  transition: transform 0.2s ease-in-out;
+  /* Ensure fast transition */
 }
 
-/* Example for staggering the cards */
-.event-cards:nth-child(1) {
-  animation-delay: 0.3s;
+.event-card-hover:hover {
+  transform: scale(1.05);
+  /* Immediate scale up on hover */
 }
 
-.event-cards:nth-child(2) {
-  animation-delay: 0.6s;
+.event-detail {
+  color: #800080;
+  font-weight: 600;
 }
 
-.event-cards:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-.event-cards:nth-child(4) {
-  animation-delay: 1.2s;
-}
-
-.event-cards:nth-child(5) {
-  animation-delay: 1.6s;
-}
-
-.event-cards:nth-child(6) {
-  animation-delay: 2s;
-}
-
-
-/* Continue for as many cards as you have */
-
-
-.event-cards:hover {
-  transform: scale(1.05) !important;
-  /* Enlarge the card on hover */
-  z-index: 1;
-  /* Ensure the card is above others when enlarged */
-}
 
 @keyframes pop-up {
   0% {
