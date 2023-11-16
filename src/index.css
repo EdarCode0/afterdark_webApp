@@ -1,5 +1,10 @@
 @import url("./font.css");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Proxima Nova" !important;
   background-color: #0F0F0F !important;
@@ -538,6 +543,10 @@ header .overlay {
   font-weight: 600;
 }
 
+.img-detail {
+  width: 50%;
+}
+
 
 @keyframes pop-up {
   0% {
@@ -578,4 +587,8 @@ header .overlay {
   .logo {
     height: 30px;
   }
+/* 
+  #eventDetails {
+    padding-left: 70px;
+  } */
 }

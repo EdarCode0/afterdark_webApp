@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 const HomeCards = ({ cardData }) => {
 
   return (
-    <Container>
       <Row>
         {cardData.map((card, index) => (
           <Col key={index} xs={6} lg={6} sm={6} className="mb-4">
@@ -25,8 +24,6 @@ const HomeCards = ({ cardData }) => {
           </Col>
         ))}
       </Row>
-
-    </Container>
   );
 };
 
